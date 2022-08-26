@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: #2ab2af;
+  --bright-yellow: #c0df34;
+  --light-gray: #f9fcfe;
+  --grayish-blue: #98a6bd;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #b3afafeb 0%, #edf1df 100%);
+}
+h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+h3 {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+p {
+  font-size: 1rem;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 350px;
+  margin: 2rem 0;
+}
+.card-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 250px 250px;
+  grid-gap: 0;
+}
+.card-intro {
+  padding: 2rem 1.5rem 0;
+  /* background-color: var(--light-gray); */
+  background: linear-gradient(180deg, #fe4242 0%, #e7a424 100%);
+  border-radius: 10px 10px 0 0;
+}
+.intro-heading {
+  color: #1cfe09;
+}
+.card-intro h3 {
+  font-size: 1rem;
+  color: green;
+  padding: 20px 0;
+}
+.card-intro p {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.card-price {
+  padding: 1.5rem;
+  background: linear-gradient(180deg, #ebff00 0%, #ffff00b8 100%);
+}
+.price-heading {
+  color: red;
+  font-size: 1.2rem;
+}
+.cost {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  color: red;
+  opacity: 0.8;
+}
+.cost span {
+  font-weight: 700;
+  opacity: 1;
+  color: red;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+.price-desc {
+  color: #c06c08;
+  font-size: 1rem;
+  padding-bottom: 30px;
+}
+button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  font-weight: 700;
+  color: orangered;
+  background-color: bisque;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.card-about {
+  padding: 2rem 1.5rem;
+  background: linear-gradient(180deg, #a7fe0c 0%, #03a314 100%);
+  border-radius: 0 0 10px 10px;
+}
+.about-heading {
+  font-size: 1.3rem;
+  color: #0787a5;
+  padding-bottom: 20px;
+}
+.card-about ul {
+  text-align: left;
+  color: #00324a;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 260px 330px;
+    grid-gap: 0;
+    padding: 0;
+  }
+  .card-intro {
+    padding: 3rem 3rem 0;
+    grid-column: 1 / 3;
+  }
+  .intro-heading {
+    font-size: 1.6rem;
+  }
+  .card-intro h3 {
+    font-size: 1.2rem;
+  }
+  .card-intro p {
+    font-size: 1rem;
+  }
+  .card-price {
+    padding: 3rem;
+    border-bottom-left-radius: 10px;
+  }
+  .price-heading {
+    font-size: 1.4rem;
+  }
+  .card-about {
+    padding: 3rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+  .about-heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 280px;
+    }
+}
+
